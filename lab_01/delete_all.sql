@@ -1,0 +1,1 @@
+DROP TABLE Rentals, Books, Authors, Readers
