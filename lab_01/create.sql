@@ -34,7 +34,6 @@ CREATE TABLE Rentals
 (
     rental_id INT,
     book_id INT,
-    author_id INT,
     reader_id INT,
     take_date DATE,
     return_date DATE

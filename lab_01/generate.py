@@ -10,8 +10,8 @@ GENRES = ['detective', 'romance novel', 'fantasy', 'science fiction', 'historica
 # Текущий год
 THIS_YEAR = int(Faker().year())
 # адреса файлов для генерации по умолчанию
-DEF_FILENAMES = {"authors": "L:\sem_5\DB\lab_01\\test_data\\authors.csv", "books": "L:\sem_5\DB\lab_01\\test_data\\books.csv",\
-                  "readers": "L:\sem_5\DB\lab_01\\test_data\\readers.csv", "rentals": "L:\sem_5\DB\lab_01\\test_data\\rentals.csv"}
+DEF_FILENAMES = {"authors": "L:\sem_5\DB\DB\lab_01\\test_data\\authors.csv", "books": "L:\sem_5\DB\DB\lab_01\\test_data\\books.csv",\
+                  "readers": "L:\sem_5\DB\DB\lab_01\\test_data\\readers.csv", "rentals": "L:\sem_5\DB\DB\lab_01\\test_data\\rentals.csv"}
 
 # генерация рандомных данных для таблицы с книгами
 def generate_random_books(count = COUNT_DATES):
@@ -62,7 +62,6 @@ def generate_random_rentals(count = COUNT_DATES):
         rand_rentals.append({
             'rental_id': i + 1,
             'book_id': random.randint(1, COUNT_DATES),
-            'author_id': random.randint(1, COUNT_DATES),
             'reader_id': random.randint(1, COUNT_DATES),
             'take_date': take_date,
             'return_date': return_date,
@@ -104,7 +103,7 @@ def generate_write_random_rentals(filename = DEF_FILENAMES['rentals'], count = C
     with open(filename, 'a') as file:
         for rental in rand_rentals:
             file.write(f"{rental['rental_id']}, {rental['book_id']},\
-                        {rental['author_id']}, {rental['reader_id']}, {rental['take_date']}, {rental['return_date']}\n")
+                       {rental['reader_id']}, {rental['take_date']}, {rental['return_date']}\n")
 
 
 def generate_write_random_all(filenames = DEF_FILENAMES, count = COUNT_DATES):
