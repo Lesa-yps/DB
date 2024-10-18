@@ -168,7 +168,7 @@ FROM Count_Author_Books
 -- Определение ОТВ 
 WITH RECURSIVE BookRentals AS
 (
-    -- Закрепленный элемент: выбираем ренты с отсутствующей датой возврата и помечаем как взятые
+    -- Закрепленный элемент: выбираем ренты с датой возврата '2024-04-09' и помечаем как взятые
     SELECT rental_id, book_id, reader_id, take_date, return_date, TRUE AS is_take
     FROM Rentals
     WHERE return_date = '2024-04-09'
@@ -207,3 +207,19 @@ SELECT author_id
 FROM  (
 SELECT author_id, ROW_NUMBER() OVER (PARTITION BY author_id ORDER BY author_id) AS rn FROM Authors  ) AS temp
 WHERE rn > 1 ) 
+
+-- 26 защите
+-- список авторов хотя бы 10 у которых больше всего книг не вернули
+
+SELECT  A.author_id
+       ,COUNT(B.book_id) AS count_books
+FROM Authors A
+join Books B on A.author_id = B.author_id
+where EXISTS (
+SELECT  1
+FROM Rentals R
+WHERE R.book_id = B.book_id and R.return_date > '2024-09-25')
+GROUP BY A.author_id
+having count(B.book_id) > 0
+ORDER BY count_books DESC;
+
