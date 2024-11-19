@@ -25,48 +25,56 @@ SELECT calc_count_books_author(10);
 
 -- 1.2. Подставляемую табличную функцию
 -- Выводит (названия, жанр, год публикации) книг у автора с переданным id
-CREATE OR REPLACE FUNCTION find_books_author(author_id INT)
-RETURNS TABLE(book_title VARCHAR, genre VARCHAR, publish_year INT
-AS $$
-BEGIN
-	   RETURN QUERY
-
-       SELECT B.title, B.genre, B.publish_year
-       FROM Books B
-       WHERE B.author_id = find_books_author.author_id;
-END;
+CREATE OR REPLACE FUNCTION find_books_author(author_id_ask INT)
+RETURNS TABLE(book_title VARCHAR, genre VARCHAR, publish_year INT)
+as $$
+   SELECT B.title, B.genre, B.publish_year
+   FROM Books B
+   WHERE B.author_id = author_id_ask;
 $$
-LANGUAGE plpgsql;
+LANGUAGE sql;
 -- Вызов функции
 SELECT *
 FROM find_books_author(10);
 
+drop function find_books_author;
+
 
 -- 1.3. Многооператорную табличную функцию
--- Считает количество книг у всех авторов и выводит (имя автора, фамилия автора, количество книг автора)
-CREATE OR REPLACE FUNCTION find_books_authors()
-RETURNS TABLE(author_first_name VARCHAR, author_last_name VARCHAR, count_books BIGINT)
-AS $$
-DECLARE
-       i RECORD;
-BEGIN
-	   FOR i IN SELECT author_id, first_name, last_name
-			    FROM Authors
-	   LOOP
-			 RETURN QUERY
 
-       		 SELECT i.first_name, i.last_name, COUNT(*)
-       		 FROM Books B
-      		 WHERE B.author_id = i.author_id;
-	   END LOOP;
+-- Удаление функции
+drop function find_books_authors;
+
+-- Вернёт книги, которые не арендованы и id автора меньше 10, и книги, у которых есть аренда и id читателя [10, 20]
+CREATE OR REPLACE FUNCTION find_books_authors()
+RETURNS TABLE(book_id INT, title VARCHAR, author_id INT)
+AS $$
+BEGIN
+    -- Первый запрос: книги авторов с id < 10 и которые не присутствуют в аренде
+    RETURN QUERY
+    SELECT B.book_id, B.title, B.author_id
+    FROM Books B
+    WHERE B.author_id < 10
+    AND NOT EXISTS (
+        SELECT 1
+        FROM Rentals RB
+        WHERE B.book_id = RB.book_id
+    );
+
+    -- Второй запрос: книги, которые были взяты читателями с id от 10 до 20
+    RETURN QUERY
+    SELECT B.book_id, B.title, B.author_id
+    FROM Books B
+    JOIN Rentals RB ON B.book_id = RB.book_id
+    JOIN Readers R ON R.reader_id = RB.reader_id
+    WHERE R.reader_id >= 10 AND R.reader_id <= 20;
 END;
 $$
 LANGUAGE plpgsql;
+
 -- Вызов функции
 SELECT *
 FROM find_books_authors();
--- Удаление функции
-drop function find_books_authors;
 
 
 -- 1.4. Функцию с рекурсивным ОТВ
@@ -124,7 +132,7 @@ CALL update_author_publish_year(4, 1);
 SELECT * FROM find_books_author(4);
 
 -- 2.2. Рекурсивную хранимую процедуру или хранимую процедур с рекурсивным ОТВ
--- Отодвигает дату возврата всех книг для читателей, у которых хоть одна книга взята до переданной даты, на 10 дней вперёд
+-- Отодвигает дату возврата всех книг для читателей, у которых хоть одна книга взята в переданную дату, на 10 дней вперёд
 CREATE OR replace PROCEDURE update_book_rentals_by_return_date(return_date_ask DATE)
 AS $$
 BEGIN

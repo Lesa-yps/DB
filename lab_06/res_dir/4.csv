@@ -1,0 +1,6 @@
+column_name,data_type,is_nullable
+author_id,integer,NO
+first_name,character varying,NO
+last_name,character varying,NO
+pseudonym,character varying,YES
+birthday,date,YES
