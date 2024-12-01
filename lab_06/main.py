@@ -5,10 +5,13 @@ import shutil
 SQL_DIR = "sql_dir"
 RES_DIR = "res_dir"
 
+flag_was_9 = False
+
 
 class DB_Library:
 
     def __init__(self):
+        global flag_was_9
         try:
             # Подключаемся к базе данных
             self.__connection = psycopg2.connect(
@@ -21,17 +24,23 @@ class DB_Library:
             self.__connection.autocommit = True
             self.__cursor = self.__connection.cursor()
 
+            # Проверка на существование таблицы из пункта 9
+            with open(SQL_DIR + "/check_9.sql", 'r') as file:
+                sql_script = file.read()
+            self.__cursor.execute(sql_script)
+            flag_was_9 = self.__cursor.fetchone()[0]
+
             print("[INFO] Успешно начата работа с PostgreSQL. БД готова к работе.")
         
         except Exception as exc:
             self.__connection = None
-            print(f"[INFO] Error while working with PostgreSQL: {exc}.")
+            print(f"[INFO] Ошибка во время работы с PostgreSQL: {exc}.")
 
     def __execute__(self, file_number):
         try:
-            sql_file = SQL_DIR + '/' + str(file_number) + '.sql'
-            res_file = RES_DIR + '/' + str(file_number) + '.csv'
-            tmp_res_file = '/tmp/' + str(file_number) + '.csv'
+            sql_file = SQL_DIR + '/' + file_number + '.sql'
+            res_file = RES_DIR + '/' + file_number + '.csv'
+            tmp_res_file = '/tmp/' + file_number + '.csv'
             with open(sql_file, 'r') as file:
                 sql_script = file.read()
             # Выполнение SQL-скрипта
@@ -39,16 +48,18 @@ class DB_Library:
             print(f"[INFO] Файл {sql_file} успешно выполнен.")
             # Копирование файла
             shutil.copy(tmp_res_file, res_file)
+            return 0
         
         except Exception as exc:
             self.__connection.rollback() # откат
             print(f"[INFO] Ошибка при выполнении файла {sql_file}: {exc}.")
+            return 1
 
     def __del__(self):
         if self.__connection:
             self.__cursor.close()
             self.__connection.close()
-            print("[INFO] PostgreSQL connection closed.")
+            print("[INFO] Работа с PostgreSQL завершена.")
 
 
 if __name__ == "__main__":
@@ -70,7 +81,12 @@ if __name__ == "__main__":
               "10. Выполнить вставку данных в созданную таблицу с использованием инструкции INSERT или COPY.")
         user = int(input("Введите выбранный пункт меню: "))
         if (user <= 10 and user >= 1):
-            db_lib.__execute__(user)
+            if user == 10 and not flag_was_9:
+                print("Ошибка! Таблица не была создана. Выполните пункт 9.")
+                continue
+            rc = db_lib.__execute__(str(user))
+            if rc == 0 and user == 9:
+                flag_was_9 = True
         elif (user == 0):
             print("Завершение работы ^-^")
         else:

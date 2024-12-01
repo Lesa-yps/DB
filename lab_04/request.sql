@@ -128,7 +128,7 @@ INSERT INTO Books (book_id, title, genre, author_id, publish_year)
 VALUES (1115, 'New Book Title', 'Fantasy', 4, 2024);
 
 
--- 6) Определяемый пользователем тип данных CLR.
+-- 6) Определяемый пользователем тип данных
 -- Вернёт авторов с количеством читателей их книг типом author_cread
 create type author_cread as (
   author_id int,
