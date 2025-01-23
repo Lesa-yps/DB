@@ -1,0 +1,161 @@
+[
+    {
+        "author_id": 2000,
+        "first_name": "Dennis",
+        "last_name": "Seamans",
+        "pseudonym": "Robust context-sensitive service-desk",
+        "birthday": "1947-10-14"
+    },
+    {
+        "author_id": 3000,
+        "first_name": "Helen",
+        "last_name": "Barnes",
+        "pseudonym": "Innovative composite Graphical User Interface",
+        "birthday": "1928-07-20"
+    }
+]
+[{"author_id":2000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"},{"author_id":3000,"first_name":"Helen","last_name":"Barnes","pseudonym":"Innovative composite Graphical User Interface","birthday":"1928-07-20"}]{"author_id":2000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}{"author_id":3000,"first_name":"Helen","last_name":"Barnes","pseudonym":"Innovative composite Graphical User Interface","birthday":"1928-07-20"}[
+    {
+        "author_id": 2000,
+        "first_name": "Dennis",
+        "last_name": "Seamans",
+        "pseudonym": "Robust context-sensitive service-desk",
+        "birthday": "1947-10-14"
+    },
+    {
+        "author_id": 3000,
+        "first_name": "Helen",
+        "last_name": "Barnes",
+        "pseudonym": "Innovative composite Graphical User Interface",
+        "birthday": "1928-07-20"
+    }
+]
+[{"author_id":2000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"},{"author_id":3000,"first_name":"Helen","last_name":"Barnes","pseudonym":"Innovative composite Graphical User Interface","birthday":"1928-07-20"}]{"author_id":2000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}{"author_id":3000,"first_name":"Helen","last_name":"Barnes","pseudonym":"Innovative composite Graphical User Interface","birthday":"1928-07-20"}[
+    {
+        "author_id": 2000,
+        "first_name": "Dennis",
+        "last_name": "Seamans",
+        "pseudonym": "Robust context-sensitive service-desk",
+        "birthday": "1947-10-14"
+    },
+    {
+        "author_id": 3000,
+        "first_name": "Helen",
+        "last_name": "Barnes",
+        "pseudonym": "Innovative composite Graphical User Interface",
+        "birthday": "1928-07-20"
+    }
+]
+[{"author_id":2000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"},{"author_id":3000,"first_name":"Helen","last_name":"Barnes","pseudonym":"Innovative composite Graphical User Interface","birthday":"1928-07-20"}]{"author_id":2000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}{"author_id":3000,"first_name":"Helen","last_name":"Barnes","pseudonym":"Innovative composite Graphical User Interface","birthday":"1928-07-20"}INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?)INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?)[
+    {
+        "author_id": 2000,
+        "first_name": "Dennis",
+        "last_name": "Seamans",
+        "pseudonym": "Robust context-sensitive service-desk",
+        "birthday": "1947-10-14"
+    },
+    {
+        "author_id": 3000,
+        "first_name": "Helen",
+        "last_name": "Barnes",
+        "pseudonym": "Innovative composite Graphical User Interface",
+        "birthday": "1928-07-20"
+    }
+]
+[{"author_id":2000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"},{"author_id":3000,"first_name":"Helen","last_name":"Barnes","pseudonym":"Innovative composite Graphical User Interface","birthday":"1928-07-20"}]{"author_id":2000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}{"author_id":3000,"first_name":"Helen","last_name":"Barnes","pseudonym":"Innovative composite Graphical User Interface","birthday":"1928-07-20"}INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?)INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?){
+    "author_id": 2000,
+    "first_name": "Dennis",
+    "last_name": "Seamans",
+    "pseudonym": "Robust context-sensitive service-desk",
+    "birthday": "1947-10-14"
+}[{"author_id":2000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}]{"author_id":2000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?){
+    "author_id": 2000,
+    "first_name": "Dennis",
+    "last_name": "Seamans",
+    "pseudonym": "Robust context-sensitive service-desk",
+    "birthday": "1947-10-14"
+}{
+    "author_id": 3000,
+    "first_name": "Dennis",
+    "last_name": "Seamans",
+    "pseudonym": "Robust context-sensitive service-desk",
+    "birthday": "1947-10-14"
+}[{"author_id":3000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}]{"author_id":3000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?){
+    "author_id": 3000,
+    "first_name": "Dennis",
+    "last_name": "Seamans",
+    "pseudonym": "Robust context-sensitive service-desk",
+    "birthday": "1947-10-14"
+}[{"author_id":3000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}]{"author_id":3000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?){
+    "author_id": 3000,
+    "first_name": "Dennis",
+    "last_name": "Seamans",
+    "pseudonym": "Robust context-sensitive service-desk",
+    "birthday": "1947-10-14"
+}[{"author_id":3000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}]{"author_id":3000,"first_name":"Dennis","last_name":"Seamans","pseudonym":"Robust context-sensitive service-desk","birthday":"1947-10-14"}{
+    "author_id": 1001,
+    "first_name": "Author_1001",
+    "last_name": "LastName_1001",
+    "pseudonym": "Pseudonym_1001",
+    "birthday": "2004-28-09"
+}[{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}]{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}{
+    "author_id": 1001,
+    "first_name": "Author_1001",
+    "last_name": "LastName_1001",
+    "pseudonym": "Pseudonym_1001",
+    "birthday": "2004-28-09"
+}[{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}]{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}{
+    "author_id": 1001,
+    "first_name": "Author_1001",
+    "last_name": "LastName_1001",
+    "pseudonym": "Pseudonym_1001",
+    "birthday": "2004-28-09"
+}[{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}]{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}{
+    "author_id": 1001,
+    "first_name": "Author_1001",
+    "last_name": "LastName_1001",
+    "pseudonym": "Pseudonym_1001",
+    "birthday": "2004-28-09"
+}[{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}]{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}{
+    "author_id": 1001,
+    "first_name": "Author_1001",
+    "last_name": "LastName_1001",
+    "pseudonym": "Pseudonym_1001",
+    "birthday": "2004-28-09"
+}[{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}]{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}{
+    "author_id": 1001,
+    "first_name": "Author_1001",
+    "last_name": "LastName_1001",
+    "pseudonym": "Pseudonym_1001",
+    "birthday": "2004-28-09"
+}[{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}]{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}{
+    "author_id": 1001,
+    "first_name": "Author_1001",
+    "last_name": "LastName_1001",
+    "pseudonym": "Pseudonym_1001",
+    "birthday": "2004-28-09"
+}[{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}]{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?)INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?)INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?)INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?)INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?)INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?)INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?)INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?){
+    "author_id": 1001,
+    "first_name": "Author_1001",
+    "last_name": "LastName_1001",
+    "pseudonym": "Pseudonym_1001",
+    "birthday": "2004-28-09"
+}[{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}]{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?){
+    "author_id": 1001,
+    "first_name": "Author_1001",
+    "last_name": "LastName_1001",
+    "pseudonym": "Pseudonym_1001",
+    "birthday": "2004-28-09"
+}[{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}]{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?){
+    "author_id": 1001,
+    "first_name": "Author_1001",
+    "last_name": "LastName_1001",
+    "pseudonym": "Pseudonym_1001",
+    "birthday": "2004-28-09"
+}[{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}]{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?){
+    "author_id": 1001,
+    "first_name": "Author_1001",
+    "last_name": "LastName_1001",
+    "pseudonym": "Pseudonym_1001",
+    "birthday": "2004-28-09"
+}[{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}]{"author_id":1001,"first_name":"Author_1001","last_name":"LastName_1001","pseudonym":"Pseudonym_1001","birthday":"2004-28-09"}INSERT INTO public.authors (author_id, first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?, ?)

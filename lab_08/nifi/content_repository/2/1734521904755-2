@@ -1,0 +1,56 @@
+{"first_name":"Author_7","last_name":"LastName_7","pseudonym":"Pseudonym_7","birthday":"2000-01-01"}INSERT INTO public.authors_lab8 (first_name, last_name, pseudonym, birthday) VALUES (?, ?, ?, ?){
+    "first_name": "Author_1",
+    "last_name": "LastName_1",
+    "pseudonym": "Pseudonym_1",
+    "birthday": "2000-01-01"
+}{"first_name":"Author_1","last_name":"LastName_1","pseudonym":"Pseudonym_1","birthday":"2000-01-01"}{
+    "first_name": "Author_2",
+    "last_name": "LastName_2",
+    "pseudonym": "Pseudonym_2",
+    "birthday": "2000-01-01"
+}{"first_name":"Author_2","last_name":"LastName_2","pseudonym":"Pseudonym_2","birthday":"2000-01-01"}{
+    "first_name": "Author_3",
+    "last_name": "LastName_3",
+    "pseudonym": "Pseudonym_3",
+    "birthday": "2000-01-01"
+}{"first_name":"Author_3","last_name":"LastName_3","pseudonym":"Pseudonym_3","birthday":"2000-01-01"}{
+    "first_name": "Author_4",
+    "last_name": "LastName_4",
+    "pseudonym": "Pseudonym_4",
+    "birthday": "2000-01-01"
+}{"first_name":"Author_4","last_name":"LastName_4","pseudonym":"Pseudonym_4","birthday":"2000-01-01"}{
+    "first_name": "Author_5",
+    "last_name": "LastName_5",
+    "pseudonym": "Pseudonym_5",
+    "birthday": "2000-01-01"
+}{"first_name":"Author_5","last_name":"LastName_5","pseudonym":"Pseudonym_5","birthday":"2000-01-01"}{
+    "first_name": "Author_6",
+    "last_name": "LastName_6",
+    "pseudonym": "Pseudonym_6",
+    "birthday": "2000-01-01"
+}{"first_name":"Author_6","last_name":"LastName_6","pseudonym":"Pseudonym_6","birthday":"2000-01-01"}{
+    "first_name": "Author_7",
+    "last_name": "LastName_7",
+    "pseudonym": "Pseudonym_7",
+    "birthday": "2000-01-01"
+}{"first_name":"Author_7","last_name":"LastName_7","pseudonym":"Pseudonym_7","birthday":"2000-01-01"}{
+    "first_name": "Author_8",
+    "last_name": "LastName_8",
+    "pseudonym": "Pseudonym_8",
+    "birthday": "2000-01-01"
+}{"first_name":"Author_8","last_name":"LastName_8","pseudonym":"Pseudonym_8","birthday":"2000-01-01"}{
+    "first_name": "Author_9",
+    "last_name": "LastName_9",
+    "pseudonym": "Pseudonym_9",
+    "birthday": "2000-01-01"
+}{"first_name":"Author_9","last_name":"LastName_9","pseudonym":"Pseudonym_9","birthday":"2000-01-01"}{
+    "first_name": "Author_10",
+    "last_name": "LastName_10",
+    "pseudonym": "Pseudonym_10",
+    "birthday": "2000-01-01"
+}{"first_name":"Author_10","last_name":"LastName_10","pseudonym":"Pseudonym_10","birthday":"2000-01-01"}{
+    "first_name": "Author_11",
+    "last_name": "LastName_11",
+    "pseudonym": "Pseudonym_11",
+    "birthday": "2000-01-01"
+}{"first_name":"Author_11","last_name":"LastName_11","pseudonym":"Pseudonym_11","birthday":"2000-01-01"}

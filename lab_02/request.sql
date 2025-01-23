@@ -62,7 +62,7 @@ FROM Books B
 WHERE B.author_id = A.author_id) AS count_books
 FROM Authors A
 -- 9. Инструкция SELECT, использующая простое выражение CASE.
--- Разбирает книги на типы новел 
+-- Разбирает книги на типы новелл
 SELECT  book_id
        ,title
        ,CASE TRIM(genre) WHEN 'romance novel' THEN 'romance novel' WHEN 'historical novel' THEN 'historical novel' ELSE 'not novel' END AS genre_novel
