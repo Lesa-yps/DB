@@ -1,0 +1,10 @@
+Базы Данных 5_сем МГТУ экзамен
+
+теория:
+https://cheddar-numeric-9f9.notion.site/611b5869450e467888476d0c9572ad65
+
+всё:
+https://github.com/jokerva1010123/BMSTU-5-cem-DB/blob/main/exam/теория/ответы_на_теорию.pdf
+
+практика:
+https://github.com/Sunshine-ki/BMSTU5_DB/wiki
